@@ -104,7 +104,7 @@ function UIGenerator() {
             onChange={(e) => setPrompt(e.target.value)}
             maxLength={1000}
           />
-          <div className="absolute bottom-3 right-4 text-xs text-gray-500 pointer-events-none">
+          <div className="absolute bottom-3 right-4 text-xs text-gray-500 pointer-events-none" aria-live="polite" aria-atomic="true">
             {prompt.length} / 1000
           </div>
         </div>

@@ -34,6 +34,8 @@ function DeployButton() {
     navigator.clipboard.writeText(liveUrl).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
+    }).catch(() => {
+      setCopied(false);
     });
   };
 

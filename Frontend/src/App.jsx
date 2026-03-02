@@ -158,7 +158,9 @@ function App() {
               <input
                 type="text"
                 placeholder="Search projects..."
-                className="bg-transparent text-sm text-gray-300 placeholder-gray-500 outline-none w-full"
+                aria-label="Search (decorative, not yet functional)"
+                title="Search (coming soon)"
+                className="bg-transparent text-sm text-gray-300 placeholder-gray-500 outline-none w-full cursor-default"
                 readOnly
               />
             </div>
@@ -243,7 +245,7 @@ function App() {
 
           {/* Footer */}
           <footer className="py-5 px-8 border-t border-gray-800/50 text-center text-sm text-gray-500">
-            Built with ❤️ by AI Builder Team &copy; {new Date().getFullYear()}
+          Built with <span role="img" aria-label="love">❤️</span> by AI Builder Team &copy; {new Date().getFullYear()}
           </footer>
         </main>
       </div>
