@@ -1,0 +1,1 @@
+{\n  "name": "ai-builder",\n  "version": "1.0.0",\n  "private": true,\n  "dependencies": {\n    "@google/generative-ai": "^0.11.0"\n  }\n}
