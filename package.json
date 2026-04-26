@@ -1,1 +1,16 @@
-{\n  "name": "ai-builder",\n  "version": "1.0.0",\n  "private": true,\n  "dependencies": {\n    "@google/generative-ai": "^0.11.0"\n  }\n}
+{
+  "name": "ai-builder-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -k -n FRONTEND,BACKEND -c cyan,green \"npm run dev --prefix Frontend\" \"npm run start --prefix Backend\"",
+    "build": "npm run build --prefix Frontend",
+    "start": "npm run start --prefix Backend"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
